@@ -36,7 +36,7 @@ light.position = new BABYLON.Vector3(0, 1, -10);
 
 const light1 = new BABYLON.HemisphericLight('hemi', new BABYLON.Vector3(1, -1, 0), scene);
 // Setup a Zappar camera instead of one of Babylon's cameras
-const camera = new ZapparBabylon.Camera(scene);
+const camera = new ZapparBabylon.Camera('zapparCamera', scene);
 
 // Request the necessary permission from the user
 ZapparBabylon.permissionRequestUI().then((granted) => {
@@ -46,7 +46,7 @@ ZapparBabylon.permissionRequestUI().then((granted) => {
 
 const instantTracker = new ZapparBabylon.InstantWorldTracker();
 // eslint-disable-next-line max-len
-const trackerTransformNode = new ZapparBabylon.InstantWorldAnchorGroup(camera, instantTracker, scene);
+const trackerTransformNode = new ZapparBabylon.InstantWorldAnchorTransformNode('tracker', camera, instantTracker, scene);
 
 let mesh : BABYLON.AbstractMesh | undefined;
 
