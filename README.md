@@ -1,5 +1,6 @@
 # Zappar for BabylonJS Example
-​
+> :warning: **This example uses a `beta` version of Instant World Tracking:** Please be mindful when using this in live projects
+
 This repository contains an AR example using the Zappar SDK for BabylonJS. This specific example uses `webpack` to compile and bundle the assets and code, and TypeScript to get full auto-complete and compile-time error checking.
 ​
 To learn more about Zappar for BabylonJS, head over to the [Zappar for BabylonJS](https://www.npmjs.com/package/@zappar/zappar-babylonjs) (@zappar/zappar-babylonjs) page on npm.
@@ -8,6 +9,7 @@ To learn more about Zappar for BabylonJS, head over to the [Zappar for BabylonJS
 ​
 Scan the QR code below using your native camera app or QR code reader to view the example:
 ​
+
 ![Preview QR Code"](preview-qr-code.png)
 ​
 ## Prerequisites
