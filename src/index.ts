@@ -2,10 +2,12 @@
 /* eslint-disable no-param-reassign */
 import * as BABYLON from 'babylonjs';
 import * as ZapparBabylon from '@zappar/zappar-babylonjs';
-import model from '../assets/ghost.glb';
+
+const model = new URL('../assets/ghost.glb', import.meta.url).href;
+const particle = new URL('../assets/particle.png', import.meta.url).href;
+
 import 'babylonjs-loaders';
-import './index.sass';
-import particle from '../assets/particle.png';
+import './index.css';
 // Model from https://sketchfab.com/3d-models/wizardy-ghost-91f9df6880f8492cb222d91b9fbd1434
 
 // The SDK is supported on many different browsers, but there are some that
